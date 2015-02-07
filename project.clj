@@ -8,11 +8,11 @@
 
   :source-paths ["src/clojure" "src"]
   :java-source-paths ["src/java"]
-  ;;:javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
+  :javac-options ["-target" "1.7" "-source" "1.7" "-Xlint:-options"]
   :plugins [[lein-droid "0.3.1"]]
   :dependencies [[org.clojure-android/clojure "1.7.0-alpha3" :use-resources true]
                  [neko/neko "3.1.1"]]
-  :profiles {:default [:dev]
+  :profiles {:default [:release]
 
              :dev
              [:user
@@ -41,7 +41,7 @@
             ;; Try increasing this value if dexer fails with
             ;; OutOfMemoryException. Set the value according to your
             ;; available RAM.
-            :dex-opts ["-JXmx4096M"]
+            :dex-opts ["-JXmx2G"]
 
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
