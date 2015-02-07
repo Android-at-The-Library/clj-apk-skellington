@@ -8,9 +8,8 @@
 
   :source-paths ["src/clojure" "src"]
   :java-source-paths ["src/java"]
-  :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
+  ;;:javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
   :plugins [[lein-droid "0.3.1"]]
-
   :dependencies [[org.clojure-android/clojure "1.7.0-alpha3" :use-resources true]
                  [neko/neko "3.0.0-preview4"]]
   :profiles {:default [:dev]
@@ -37,7 +36,7 @@
                 :build-type :release}}]}
 
   :android {;; Specify the path to the Android SDK directory.
-            :sdk-path "/usr/local/Cellar/android-sdk/24/"
+            :sdk-path "/home/vagrant/android-sdk-linux/"
 
             ;; Try increasing this value if dexer fails with
             ;; OutOfMemoryException. Set the value according to your
@@ -47,7 +46,7 @@
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
 
-            :target-version "17"
+            :target-version "19"
             :aot-exclude-ns ["clojure.parallel" "clojure.core.reducers"
                              "cljs-tooling.complete" "cljs-tooling.info"
                              "cljs-tooling.util.analysis" "cljs-tooling.util.misc"
