@@ -12,7 +12,7 @@
   :plugins [[lein-droid "0.3.1"]]
   :dependencies [[org.clojure-android/clojure "1.7.0-alpha3" :use-resources true]
                  [neko/neko "3.1.1"]]
-  :profiles {:default [:release]
+  :profiles {:default [:dev]
 
              :dev
              [:user
@@ -42,7 +42,9 @@
             ;; OutOfMemoryException. Set the value according to your
             ;; available RAM.
             :dex-opts ["-JXmx2G"]
-
+            ;; in virtualbox, for whatever reason the image we are using
+            ;; won't allocate more than 2 gigs to the heap, so that's what we have to work with
+            ;; on another machine this might be 8G
             ;; If previous option didn't work, uncomment this as well.
             ;; :force-dex-optimize true
 
