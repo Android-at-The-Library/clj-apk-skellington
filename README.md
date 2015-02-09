@@ -12,4 +12,4 @@ to start this project from scratch:
   2. use lein to build a project template:
     -  `lein droid new lesson_1 org.stuff.class_demo :activity MainActivity :target-sdk 19 :app-name class_demo`
       * in this case, our app  will be in a folder named "lesson_1", it will be targeted for android version 4.4.2-kitkat, and once installed on the device, the app will be named "class_demo".   
-  3. open projects.clj, and check the android sdk path and profile settings.
+  3. open projects.clj, and check the android sdk path and profile settings --  don't forget the Dex options!
