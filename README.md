@@ -1,7 +1,10 @@
-# clj-apk-skellington
-a barebones skeleton app for getting started on lein-droid ... makes a really shiny apk with buttons and nice styling
+At this point in the class, We've looked a little at how android development looks in Java, with Android Studio.  This is I think, a more streamlined approach that can allow for a wider range of experience and expectations. 
 
-this is built from the lein-droid tutorial.
+This App will happen in several stages.  First, we will compare the way that we add element to the app with the way that we added them to the [superpowers app](https://github.com/Android-at-The-Library/Intents-SuperPowers) that we made last week.  Next, we will look at webview mechanisms.  Last, we will look at different ways to quickly spin up a custom web-view application.  
+
+
+### clj-apk-skellington
+#####this is inspired by the lein-droid tutorial.
 
 to start this project from scratch:
   1. enter a directory from which to start your new project:
